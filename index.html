@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DynamicDamon's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <section id="header">
+    <img src="https://i.ibb.co/sg2km0t/profleimage.jpg" alt="profleimage" border="0">
+    <h1>Hello, my name is Damon.</h1>
+    <p>Welcome to my portfolio site.</p>
+  </section>
+
+  <section class="project">
+    <div class="border-left"></div>
+    <video class="video" loop controls="false" autoplay muted>
+    <source src="https://i.imgur.com/Z32YNPp.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <div class="border-right"></div>
+  </section>
+
+  <section class="project-description">
+    <h1>Califight</h1>
+    <p>A platform connecting fighters and academies for following fighters, events and setup matching making.</p>
+    <div class="link-container">
+      <a>
+        <i class="fa-2x fas fa-link"></i>
+      </a>
+      <a>
+        <i class="fa-2x fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="project">
+    <div class="border-left"></div>
+    <video class="video" loop controls="false" autoplay muted>
+    <source src="https://i.imgur.com/XrbHrlC.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <div class="border-right"></div>
+  </section>
+
+  <section class="project-description">
+    <h1>WheelChimp</h1>
+    <p>A marketplace for selling and buying rims.</p>
+    <div class="link-container">
+      <a>
+        <i class="fa-2x fas fa-link"></i>
+      </a>
+      <a>
+        <i class="fa-2x fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+  <script>
+    const videos = document.getElementsByClassName('video');
+    for (let video of videos) {
+      video.controls = false;
+    }
+  </script>
+
+
+
+</body>
+</html>s

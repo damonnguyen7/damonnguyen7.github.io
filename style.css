@@ -1,0 +1,92 @@
+body {
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+#header {
+  width: 200px;
+  margin: 0px auto;
+  margin-top: 32px;
+}
+
+#header img {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+#header h1 {
+  font-size: 24px;
+  margin-top: 3px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 400px;
+  margin: 32px auto;
+}
+
+.project-description {
+  width: 364px;
+  margin: 0px auto;
+  margin-bottom: 64px;
+}
+
+.project-description h1 {
+  font-size: 24px;
+}
+
+.video {
+  width: 500px;
+  height: 225px;
+}
+
+.border-left {
+  height: 241px;
+  width: 30px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: -10px;
+}
+
+.border-right {
+  height: 241px;
+  width: 30px;
+  background-color: #FFFFFF;
+  position: absolute;
+  right: -9px;
+}
+
+.link-container {
+  margin-top: 12px;
+}
+
+.link-container > * {
+  margin-right: 8px;
+}
+
+.link-container a {
+  color: rgb(34, 34, 34);
+}
+
+.link-container a:hover {
+  color: #2980b9;
+  cursor: pointer;
+}
