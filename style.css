@@ -1,5 +1,7 @@
 body {
-
+  background-color: #FFFFFF;
+  margin: unset;
+  overflow-x: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -18,10 +20,20 @@ time, mark, audio, video {
   font-family: 'Noto Sans HK', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: unset;
+}
+
 #header {
-  width: 240px;
   margin: 0px auto;
-  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#header div:nth-child(1) {
+  margin-right: 16px;
+  width: 250px;
 }
 
 #header img {
@@ -40,7 +52,38 @@ time, mark, audio, video {
 }
 
 #header {
-  margin-bottom: 64px;
+  display: flex;
+  flex-direction: row;
+}
+
+#rings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rings .vanta-canvas {
+  position: unset !important;
+  width: 100%;
+  height: 100vh;
+}
+
+.ring--intro {
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 1;
+  margin-left: 16px;
+}
+
+.project-sec {
+  margin-bottom: 32px;
+}
+
+.container-vid-des {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .project {
@@ -53,8 +96,6 @@ time, mark, audio, video {
 
 .project-description {
   width: 364px;
-  margin: 0px auto;
-  margin-bottom: 64px;
 }
 
 .project-description h1 {
@@ -66,8 +107,11 @@ time, mark, audio, video {
 }
 
 .video {
-  width: 500px;
+  width: 400px;
   height: 225px;
+  border-radius: 4px;
+  margin-right: 16px;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
 }
 
 .border-left {
@@ -92,16 +136,19 @@ time, mark, audio, video {
 
 .techstack--ul {
   display: flex;
+  padding-left: unset;
+  list-style: none;
 }
 
 .techstack--ul li {
   margin-right: 8px;
-  background-color: rgb(34, 34, 34);
+  background-color: #23272A;
   color: #FFFFFF;
   padding: 4px 8px;
   line-height: 1.2;
   border-radius: 4px;
   font-size: 14px;
+
 }
 
 .link-container {
@@ -113,10 +160,61 @@ time, mark, audio, video {
 }
 
 .link-container a {
-  color: rgb(34, 34, 34);
+  color: #23272A;
 }
 
 .link-container a:hover {
   color: #2980b9;
   cursor: pointer;
+}
+
+.sec-label {
+  font-size: 24px;
+  text-align: center;
+  margin: 32px 0px;
+}
+
+.sec-description {
+  width: 500px;
+  margin: 0px auto;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 550px) {
+  #header {
+    flex-direction: column;
+    padding: 0px 32px;
+  }
+  #header div:nth-child(1) {
+    width: 100%;
+  }
+  .sec-description {
+    width: unset;
+    padding: 0px 16px;
+  }
+  .container-vid-des {
+    flex-direction: column;
+  }
+  .project-vid {
+    margin: 0px auto;
+  }
+  .project-description {
+    margin: 0px auto;
+    margin-top: 16px;
+    padding: 0px 16px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container-vid-des {
+    flex-direction: column;
+  }
+  .project-vid {
+    margin: 0px auto;
+  }
+  .project-description {
+    margin: 0px auto; 
+    width: 412px;
+    margin-top: 16px;
+  }
 }

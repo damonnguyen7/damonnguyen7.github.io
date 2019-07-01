@@ -2,93 +2,165 @@
 <html>
 <head>
   <title>DynamicDamon's Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./reset.css"> -->
   <link rel="stylesheet" type="text/css" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-  <section id="header">
-    <img src="https://i.ibb.co/sg2km0t/profleimage.jpg" alt="profleimage" border="0">
-    <h1>Hello, my name is Damon.</h1>
-    <p>Welcome to my portfolio site.</p>
-    <div class="techstack">
-      <ul class="techstack--ul">
-        <li>Software Developer</li>
-      </ul>
+  <div id="rings">
+    <div class="ring--intro">
+      <h1>Hello, I'm is <span>Damon Nguyen</span>.</h1>
+      <p>I'm a web developer.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="project">
-    <div class="border-left"></div>
-    <video class="video" loop controls="false" autoplay muted>
-    <source src="https://i.imgur.com/Z32YNPp.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    <div class="border-right"></div>
-  </section>
+  <div class="sec-label">About</div>
 
-  <section class="project-description">
-    <h1>Califight</h1>
-    <p>A platform connecting fighters and academies for following fighters, events and setup matching making.</p>
-    <div class="techstack">
-      <ul class="techstack--ul">
-        <li>React</li>
-        <li>Redux</li>
-        <li>Node</li>
-        <li>Express</li>
-        <li>DynamoDB</li>
-      </ul>
+  <div id="header">
+    <div>
+      <img src="profleimage.jpg" alt="profleimage" border="0">
     </div>
-    <div class="link-container">
-      <a href="http://califight.com/" target="_blank">
-        <i class="fa-2x fas fa-link"></i>
-      </a>
-      <a target="_blank">
-        <i class="fa-2x fab fa-github"></i>
-      </a>
-    </div>
-  </section>
+    <div id="chart_div"></div>
+  </div>
 
-  <section class="project">
-    <div class="border-left"></div>
-    <video class="video" loop controls="false" autoplay muted>
-    <source src="https://i.imgur.com/XrbHrlC.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    <div class="border-right"></div>
-  </section>
+  <div class="sec-description">
+    <p>
+      A software developer who is proficient in JavaScript. Loves to use modern technology like React to build dynamic and responsive user interface. Though spending a lot of time using modern frontend tech stacks a focus on the fundamentals of HTML, CSS and JavaScript is a must allowing for a deeper understanding and creative solution. Not only limited to frontend development but able to contribute to the backend using technology like Node.js. 
+    </p>
+  </div>
 
-  <section class="project-description">
-    <h1>Wheelchimp</h1>
-    <p>A marketplace for selling and buying rims.</p>
-    <div class="techstack">
-      <ul class="techstack--ul">
-        <li>React</li>
-        <li>Redux</li>
-        <li>Node</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-      </ul>
-    </div>
-    <div class="link-container">
-      <a href="https://www.wheelchimp.com" target="_blank">
-        <i class="fa-2x fas fa-link"></i>
-      </a>
-      <a target="_blank">
-        <i class="fa-2x fab fa-github"></i>
-      </a>
-    </div>
-  </section>
+  <div class="sec-label">Projects</div>
 
-  <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
-  <script>
-    const videos = document.getElementsByClassName('video');
-    for (let video of videos) {
-      video.controls = false;
-    }
-  </script>
+  <div class="project-sec">
+    <div class="container-vid-des">
+      <div class="project-vid">
+        <video class="video" loop controls="false" autoplay muted>
+        <source src="califightv2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="project-description">
+        <h4>Califight</h4>
+        <p>A platform connecting fighters and academies for following fighters, events and setup matching making.</p>
+        <div class="techstack">
+          <ul class="techstack--ul">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>DynamoDB</li>
+          </ul>
+        </div>
+        <div class="link-container">
+          <a href="http://califight.com/" target="_blank">
+            <i class="fa-2x fas fa-link"></i>
+          </a>
+          <a target="_blank">
+            <i class="fa-2x fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="project-sec">
+  <div class="container-vid-des">
+    <div class="project-vid">
+      <video class="video" loop controls="false" autoplay muted>
+      <source src="wheelchimpv2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="project-description">
+      <h4>Wheelchimp</h4>
+      <p>A marketplace for selling and buying rims.</p>
+      <div class="techstack">
+        <ul class="techstack--ul">
+          <li>React</li>
+          <li>Redux</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="link-container">
+        <a href="https://www.wheelchimp.com" target="_blank">
+          <i class="fa-2x fas fa-link"></i>
+        </a>
+        <a target="_blank">
+          <i class="fa-2x fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script scr="index.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+<script>
+  const videos = document.getElementsByClassName('video');
+  for (let video of videos) {
+    video.controls = false;
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
+<script src="three.r92.min.js"></script>
+<script src="vanta.rings.min.js"></script>
+<script>
+  VANTA.RINGS({
+    el: "#rings",
+    backgroundColor: 0x141618,
+    color: 0x1c223e
+  })
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawBasic);
+
+  function drawBasic() {
+    const data = google.visualization.arrayToDataTable([
+      ['Skills', 'Out of 10'],
+      ['JavaScript', 9],
+      ['HTML', 9],
+      ['CSS', 9],
+      ['React', 8],
+      ['Redux', 7],
+      ['Angular', 6.5],
+      ['jQuery', 8],
+      ['Node', 8],
+      ['MongoDB', 7.5],
+      ['PostgreSQL', 7],
+      ['DynamoDB', 7],
+      ['AWS', 6.5]
+    ]);
+
+    const options = {
+      title: 'My Skills',
+      chartArea: {width: '50%'},
+      hAxis: {
+        minValue: 0
+      },
+      annotations: {
+        textStyle: {
+          fontName: 'Noto Sans HK, sans-serif',
+          fontSize: 18
+        }
+      },
+      colors: ['#23272A']
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+  }
+
+</script>
 
 
 
