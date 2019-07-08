@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Califight Demo</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body id="demo-body">
+  <div class="back-btn">
+    <a href="/">
+      <i class="material-icons">arrow_back</i>
+    </a>
+  </div>
+
+  <div class="demo-card">
+    <video class="video-demo" loop controls="false" autoplay muted>
+      <source src="califightv3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div>
+    <div class="demo-card-description">
+      <h1>Califight</h1>
+      <p>A platform connecting fighters and academies for following fighters, events and setup matching making.</p>
+      <div class="techstack">
+        <h2>Tech Stack</h2>
+        <ul class="techstack--ul">
+          <li>React</li>
+          <li>Redux</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>DynamoDB</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<script>
+  const videos = document.getElementsByClassName('video-demo');
+  for (let video of videos) {
+    video.controls = false;
+  }
+</script>
+
+</body>
+</html>

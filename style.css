@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   padding-left: unset;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .techstack--ul li {
@@ -148,7 +149,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.2;
   border-radius: 4px;
   font-size: 14px;
-
+  margin-bottom: 4px;
 }
 
 .link-container {
@@ -179,6 +180,84 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0px auto;
   margin-top: 16px;
 }
+
+#demo-body {
+  background-color: #23272A;
+}
+
+.demo-card {
+  width: 800px;
+  margin: 32px auto;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.video-demo {
+  border-radius: 2px 2px 0px 0px;
+  width: 100%;
+}
+
+.demo-card-description {
+  padding: 16px;
+}
+
+.demo-card-description p {
+  margin: 8px 0px;
+}
+
+.demo-card h1 {
+ font-size: 24px;
+}
+
+.demo-card h2 {
+ font-size: 18px;
+}
+
+.techstack .techstack--ul {
+  margin-top: 8px;
+}
+
+.back-btn {
+  width: fit-content;
+  position: fixed;
+  margin-left: 16px;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+}
+
+.back-btn i {
+  color: #FFFFFF;
+}
+
+
+/* video demo media query */
+@media only screen and (max-width: 832px) {
+  #demo-body {
+    background-color: unset;
+  }
+  .demo-card {
+    border-radius: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    box-shadow: none;
+  }
+  .video-demo {
+    border-radius: unset;
+  }
+  .back-btn {
+    display: none;
+    position: unset;
+    margin-left: unset;
+  }
+  .back-btn i {
+    color: unset;
+  }
+}
+/* video demo media query */
 
 @media only screen and (max-width: 550px) {
   #header {
